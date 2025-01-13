@@ -4,13 +4,13 @@ pipeline {
     stage('Build'){
       steps{
         echo 'Fake build stage'
-        pwd
+        sh 'pwd'
       }
     }
     stage('Test'){
       steps{
         echo 'Fake test stage'
-        ls
+       sh 'ls'
       }
     }
     stage('Deploy'){
