@@ -4,19 +4,19 @@ pipeline {
     stage('Build'){
       steps{
         echo 'Fake build stage'
-        sh "pwd"
+        bat "pwd"
       }
     }
     stage('Test'){
       steps{
         echo 'Fake test stage'
-        sh "ls"
+        bat "ls"
       }
     }
     stage('Deploy'){
       steps{
         echo 'Fake deploy stage'
-        sh "touch newFile.txt"
+        bat "touch newFile.txt"
       }
     }
   }
