@@ -16,6 +16,7 @@ pipeline {
     stage('Deploy'){
       steps{
         echo 'Fake deploy stage'
+        sh "touch newFile.txt"
       }
     }
   }
